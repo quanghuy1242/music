@@ -28,7 +28,9 @@ function Nutsearch() {
   var x = document.getElementById("subs");
   if (x.style.display == "none") {
     x.style.display = "block";
-  } else x.style.display = "none";
+  } else{
+    x.style.display = "none";
+  } 
 }
 
 //tab

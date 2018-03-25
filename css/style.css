@@ -544,6 +544,7 @@ audio {
 	margin-right: -3px;
 	outline: none;
 	cursor: pointer;
+	font-size: 17px;
 }
 .active{
 	background-color: #398791;
