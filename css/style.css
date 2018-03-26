@@ -79,10 +79,10 @@ aside {
 	padding: 5px 10px 10px 10px;
 }
 footer {
-	padding: 20px 0 20px 0;
-    height: auto;
-    background-color: #398791;
-	text-align: center;
+	padding: 20px 0 20px 310px;
+    height: 80px;
+    background-color: #a6ccc6;
+	/* text-align: center; */
 	margin-top: 10px;
 }
 ul {
@@ -151,7 +151,6 @@ nav ul li:hover a{
 .hinh {
 	width: 134px;
 	height: 134px;
-	background-color: aquamarine;
 }
 .titlehinh {
 	height: 36px;
@@ -548,4 +547,29 @@ audio {
 }
 .active{
 	background-color: #398791;
+}
+/* hoatanh ds */
+#ds a:hover img {
+	opacity: 0.6;
+	transition: 0.5s;
+}
+#ds a img{
+	transition: 0.5s;
+}
+
+/* anhalbum */
+#a2 a:hover img {
+	opacity: 0.6;
+	transition: 0.5s;
+}
+#a2 a img{
+	transition: 0.5s;
+}
+/* hoat anh anext */
+#anext a:hover img {
+	opacity: 0.6;
+	transition: 0.5s;
+}
+#anext a img{
+	transition: 0.5s;
 }
