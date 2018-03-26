@@ -535,10 +535,10 @@ audio {
 	display: none;
 }
 .tablinks {
-	color: white;
+	color: black;
 	width: 170px;
 	height: 40px;
-	background-color: #71aca3;
+	background-color: white;
 	border: 0px;
 	margin-right: -3px;
 	outline: none;
@@ -547,10 +547,11 @@ audio {
 }
 .active{
 	background-color: #398791;
+	color: white;
 }
 /* hoatanh ds */
 #ds a:hover img {
-	opacity: 0.6;
+	opacity: 0.7;
 	transition: 0.5s;
 }
 #ds a img{
@@ -559,7 +560,7 @@ audio {
 
 /* anhalbum */
 #a2 a:hover img {
-	opacity: 0.6;
+	opacity: 0.7;
 	transition: 0.5s;
 }
 #a2 a img{
@@ -567,9 +568,46 @@ audio {
 }
 /* hoat anh anext */
 #anext a:hover img {
-	opacity: 0.6;
+	opacity: 0.7;
 	transition: 0.5s;
 }
 #anext a img{
 	transition: 0.5s;
+}
+/* nut play */
+.smallplay{
+	position: absolute;
+	margin: 45px 0px 0px -90px;
+	/* margin: 60px 0px 0px -80px; */
+	width:50px;
+	opacity: 0;
+}
+#a2 a:hover .smallplay {
+	opacity: 0.8;
+	animation: myani 0.2s forwards;
+}
+#anext a:hover .smallplay {
+	opacity: 0.8;
+	animation: myani 0.2s forwards;
+}
+@keyframes myani{
+	0%{
+		width: 3px;
+		margin: 60px 0px 0px -70px;
+	}
+	100%{
+		width: 50px;
+		margin: 45px 0px 0px -90px
+	}
+}
+
+/* nut play danh sach */
+.smallplayds{
+	position: absolute;
+	width: 25px;
+	margin: 20px 0px 0px -45px;
+	opacity: 0;
+}
+#ds a:hover .smallplayds{
+	opacity: 0.8;
 }
