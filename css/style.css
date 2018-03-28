@@ -105,6 +105,7 @@ a {
 	display: block;
 }
 nav ul li {
+	/* transition: 0.5s; */
 	width: 100px;
 	height: 40px;
 	float: left;
@@ -238,16 +239,21 @@ input[type=button]:hover,input[type=submit]:hover {
 }
 .sub {
 	display: none;
-	opacity: 0;
+	/* opacity: 0; */
 	position: absolute;
 	margin-top: -1px;
 	z-index: 3;
+	/* animation: fadeout 0.5s forwards; */
 }
 .sub li {
+	transition: 0.5s;
 	background-color: #a6ccc6;
 }
 .sub li:hover {
 	background-color: #398791 !important;
+}
+.sub li:hover a{
+	color: white !important;
 }
 nav ul li:hover ul {
 	animation: load 0.5s forwards;
@@ -260,6 +266,9 @@ nav ul li:hover ul {
 	color: black !important;
 }
 @keyframes load{
+	0%{
+		opacity: 0;
+	}
 	100%{
 		opacity: 1;
 	}
@@ -550,6 +559,14 @@ audio {
 	}
 	to{
 		opacity: 1;
+	}
+}
+@keyframes fadeout{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
 	}
 }
 .tablinks {
