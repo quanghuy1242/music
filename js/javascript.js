@@ -25,11 +25,11 @@ function showSlides(n) {
 
 // NUT SEARCH
 function Nutsearch() {
-  var x = document.getElementById("subs");
-  if (x.style.display == "none") {
-    x.style.display = "block";
+  var x = document.getElementsByClassName("subs");
+  if (x[0].style.display == "none") {
+    x[0].style.display = "block";
   } else{
-    x.style.display = "none";
+    x[0].style.display = "none";
   } 
 }
 

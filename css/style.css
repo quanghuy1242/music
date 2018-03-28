@@ -261,7 +261,7 @@ nav ul li:hover ul {
 }
 @keyframes load{
 	100%{
-		opacity: 0.9;
+		opacity: 1;
 	}
 }
 @keyframes loadx{
@@ -299,10 +299,12 @@ i {
 	padding: 3px;
   }
 nav ul li:hover i{
+	transform: rotate(225deg);
 	transition: 0.5s;
 	border-color: black;
 }
 #dndk li:hover i{
+	transform: rotate(225deg);
 	transition: 0.5s;
 	border-color: black;
 }
@@ -425,6 +427,7 @@ h2 {
 }
 /* hop tim kiem */
 #searchbox{
+	animation: fade 0.5s;
 	width: 360px;
 	height: 50px;
 	background-color: #398791;
@@ -498,12 +501,18 @@ nav ul li:hover #subs {
 	column-count: 2;
 	border: 1px solid #cacaca;
 	margin-top: 10px;
-	padding: 10px 10px 0px 10px;
+	padding: 10px 0px 0px 10px;
 }
 #loibaihat h3{
+	height: 35px;
+	line-height: 35px;
+	padding: 5px 0px 5px 0px;
+	font-weight: lighter;
+	background-color: #398791;
 	text-align: center;
 	column-span: all;
 	margin:0 10px 10px 0px;
+	color: white;
 }
 #mainmain{
 	height: auto;
@@ -533,6 +542,15 @@ audio {
 /* tab */
 .tabcontent {
 	display: none;
+	animation: fade 0.1s;
+}
+@keyframes fade{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
 .tablinks {
 	color: black;
@@ -597,7 +615,7 @@ audio {
 	}
 	100%{
 		width: 50px;
-		margin: 45px 0px 0px -90px
+		margin: 45px 0px 0px -90px;
 	}
 }
 
