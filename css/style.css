@@ -109,12 +109,13 @@ nav ul li {
 	width: 100px;
 	height: 40px;
 	float: left;
+	/* display: inline-block; */
 	text-align: center;
 }
 nav ul li:hover {
 	height: 40px;
 	background-color: #a6ccc6;
-	transition: 00.5s;
+	transition: 0.5s;
 }
 nav ul li:hover a{
 	color: black !important;
@@ -129,7 +130,7 @@ nav ul li:hover a{
 	background-color: #398791;
 }
 .smallbaner {
-	width: 134px;
+	width: 132px;
 	height: 56px;
 	margin: 0 0 0 10px;
 	
@@ -248,6 +249,7 @@ input[type=button]:hover,input[type=submit]:hover {
 .sub li {
 	transition: 0.5s;
 	background-color: #a6ccc6;
+	/* animation: loadaaaa 0.5s forwards; */
 }
 .sub li:hover {
 	background-color: #398791 !important;
@@ -255,12 +257,15 @@ input[type=button]:hover,input[type=submit]:hover {
 .sub li:hover a{
 	color: white !important;
 }
+
 nav ul li:hover ul {
 	animation: load 0.5s forwards;
 	margin-left: 0px;
 	display: block;
 }
-
+nav ul li:hover ul li {
+	animation: loadaa 0.5s forwards;
+}
 .sub li a {
 	text-transform: none;
 	color: black !important;
@@ -283,7 +288,19 @@ nav ul li:hover ul {
 	margin-left: 0px;
 	display: block;
 }
-
+#dndk li:hover ul li {
+	animation: loadaa 0.5s forwards;
+}
+@keyframes loadaa{
+	0%{
+		margin-top: -30px;
+		opacity: 0;
+	}
+	100%{
+		margin-top: 0px;
+		opacity: 1;
+	}
+}
 #dndk li:hover {
 	background-color: #a6ccc6;
 	transition: 0.5s;
@@ -551,7 +568,7 @@ audio {
 /* tab */
 .tabcontent {
 	display: none;
-	animation: fade 0.1s;
+	/* animation: fade 0.1s; */
 }
 @keyframes fade{
 	from{
