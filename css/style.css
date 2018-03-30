@@ -65,14 +65,14 @@ a:hover{
 	margin-top: 50px;
 }
 section {
-    width: 730px;
+    width: 740px;
     background-color: white;
-    height: auto;
+    height: 1306px;
     overflow: auto;
     float: left;
 }
 aside {
-	width: 350px;
+	width: 340px;
 	height: auto;
     background-color: white;
     float: left;
@@ -133,7 +133,6 @@ nav ul li:hover a{
 	width: 132px;
 	height: 56px;
 	margin: 0 0 0 10px;
-	
 	float: left;
 	padding: 1px 1px 1px 1px;
 }
@@ -511,19 +510,20 @@ nav ul li:hover #subs {
 #khungplayer{
 	border: 1px solid #cacaca;
 	margin-top: 15px;
-	width: 728px;
-	height: 100px;
+	width: 738px;
+	height: 73px;
 	background-color: #cae6e1;
 	padding-top: 10px;
 }
 #mediainfo {
 	margin-top: 10px;
-	width: 707px;
+	width: 717px;
 	height: auto;
 	border: 1px solid #cacaca;
 	padding: 10px
 }
 #loibaihat{
+	/* width: 740px; */
 	column-count: 2;
 	border: 1px solid #cacaca;
 	margin-top: 10px;
@@ -561,8 +561,9 @@ nav ul li:hover #subs {
 	display: block;
 }
 audio {
-	width: 728px;
-	
+	margin-top: -1px;
+	border: 1px solid #cacaca;
+	width: 738px;
 }
 
 /* tab */
