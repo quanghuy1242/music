@@ -112,7 +112,7 @@
 						<h2 style="padding: 10px;">NỔI BẬT TRONG TUẦN</h2>
 						<div>
 							<div class="nghesi">
-								<div class="hinh"><a href="#"><img src="image/album/1.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a></div>
+								<div class="hinh"><a href="trangcon/album/sunday.html"><img src="image/album/1.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a></div>
 								
 								<div class="titlehinh"> Various Artists </div>
 							</div>
@@ -435,6 +435,20 @@
 	</div>
 	<script>
 			document.getElementById("defaultOpen").click();
+
+			// autochange slide in 4s
+			var myslides = 0;
+			banner();
+			function banner(){
+			var i;
+			var slides = document.getElementsByClassName("imggg");
+			for(i = 0;i<slides.length;i++)
+				{slides[i].style.display = "none";}
+			myslides++;
+			if(myslides>slides.length) {myslides=1;}
+			slides[myslides - 1].style.display = "block";
+			setTimeout(banner,4000);
+			}
 	</script>
 </body>
 </html>

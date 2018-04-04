@@ -67,7 +67,7 @@ a:hover{
 section {
     width: 740px;
     background-color: white;
-    height: 1306px;
+    /* height: 1306px; */
     overflow: auto;
     float: left;
 }
@@ -127,7 +127,8 @@ nav ul li:hover a{
 	padding: 1px 1px 1px 1px;
 }
 #banner1:hover{
-	background-color: #398791;
+	border: 1px solid #5c8f96;
+	padding: 0px;
 }
 .smallbaner {
 	width: 132px;
@@ -449,6 +450,7 @@ h2 {
 .imggg{
 	display: block;
 	position: absolute;
+	animation: fade 1s;
 }
 /* hop tim kiem */
 #searchbox{
@@ -663,4 +665,18 @@ audio {
 }
 #ds a:hover .smallplayds{
 	opacity: 0.8;
+}
+
+.albumdanhsach0{
+	width: 350px;
+	height: 40px;
+	padding-left: 10px;
+}
+.albumdanhsach1{
+	width: 350px;
+	height: 40px;
+	padding-left: 10px;
+}
+#mediainfo table tr td{
+	cursor: pointer;
 }

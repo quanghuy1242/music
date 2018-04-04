@@ -22,7 +22,6 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
-
 // NUT SEARCH
 function Nutsearch() {
   var x = document.getElementsByClassName("subs");
@@ -32,7 +31,6 @@ function Nutsearch() {
     x[0].style.display = "none";
   } 
 }
-
 //tab
 function opentab(evt, tabname) {
 
