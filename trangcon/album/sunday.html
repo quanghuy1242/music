@@ -84,56 +84,87 @@
 					<div>
                         <div id="mainplayer">
 							<span style="font-size: 25px;color:#164954">Album</span> <span style="width: 720px">- Various Artists</span>
+							<span style="padding-left: 50px;">Bài hát đang phát: </span><span id="stt">1 </span>
 							<div>
 									<div id="khungplayer">
 										<h2 id="tenbaihat">Bài hát 1</h2>
 										<h3 id="tencasi" style="padding-bottom: 18px;">Ca sĩ 1</h3>
 									</div>
-								<audio controls controlsList="nodownload" id="audioaudio" autoplay>
+									<button class="nextprev" style="border-left: 1px solid #cacaca;" onclick="prev()">
+										<img src="prev.svg" alt="prev" width="23">
+									</button>
+									<button class="nextprev"onclick="next()">
+											<img src="next.svg" alt="next" width="23">
+									</button>
+								<audio controls controlsList="nodownload" id="audioaudio">
 									<p>Your browser does not support the audio element.</p>
-									<!-- <source src="../../musicdata/1.mp3"> -->
+									<source src="">
 								</audio>
 							</div>
 						</div>
 					</div>
 					<script>
-						var tenbh = ["Bài hát 1","Bài hát 2","Bài hát 3","Bài hát 4","Bài hát 5","Bài hát 6"];
-						var tencs = ["Ca sĩ 1","Ca sĩ 2","Ca sĩ 3","Ca sĩ 4","Ca sĩ 5","Ca sĩ 6"];
+						var tenbh = document.getElementsByClassName("albumdanhsach0");
+						var tencs = document.getElementsByClassName("albumcasi");
 						var nhac = new Audio();
 						var nhacs = ["../../musicdata/1.mp3","../../musicdata/1.mp3","../../musicdata/1.mp3","../../musicdata/1.mp3","../../musicdata/1.mp3","../../musicdata/1.mp3"];
 						function Playnhac(i){
 							// nhac.src = nhacs[i];
 							// nhac.play();
-							document.getElementById("tenbaihat").innerHTML=tenbh[i];
-							document.getElementById("tencasi").innerHTML=tencs[i];
+							document.getElementById("tenbaihat").innerHTML=tenbh[i].innerHTML;
+							document.getElementById("tencasi").innerHTML=tencs[i].innerHTML;
 							document.getElementById("audioaudio").src = nhacs[i];
+							document.getElementById("audioaudio").autoplay="autoplay";
+							document.getElementById("stt").innerHTML = i+1;
+						}
+						function prev(){
+							var stt = document.getElementById("stt").innerHTML;
+							document.getElementById("tenbaihat").innerHTML=tenbh[stt-2].innerHTML;
+							document.getElementById("tencasi").innerHTML=tencs[stt-2].innerHTML;
+							document.getElementById("audioaudio").src = nhacs[stt-2];
+							document.getElementById("audioaudio").autoplay="autoplay";
+							document.getElementById("stt").innerHTML = stt-1;
+						}
+						function next(){
+							var stt = document.getElementById("stt").innerHTML;
+							document.getElementById("tenbaihat").innerHTML=tenbh[stt].innerHTML;
+							document.getElementById("tencasi").innerHTML=tencs[stt].innerHTML;
+							document.getElementById("audioaudio").src = nhacs[stt];
+							document.getElementById("audioaudio").autoplay="autoplay";
+							document.getElementById("stt").innerHTML = parseInt(stt)+1;
 						}
 					</script>
                         <div id="mediainfo">
 							<table style="border-collapse: collapse">
                                 <tr style="background-color: #cae6e1">
-                                    <td class="albumdanhsach0" onClick="Playnhac(0);">1. Bai hat 1</td>
-                                    <td style="width: 360px">Ca si</td>
+									<td style="width: 20px">1. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(0);" id="defaultplay">Bài hát 1</td>
+                                    <td style="width: 340px" class="albumcasi">Ca sĩ 1</td>
                                 </tr>
                                 <tr>
-                                    <td class="albumdanhsach0" onClick="Playnhac(1);">2. Bai hat 2</td>
-                                    <td style="width: 360px">Ca si</td>
+									<td style="width: 20px">2. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(1);">Bài hát 2</td>
+                                    <td style="width: 340px" class="albumcasi">Ca sĩ 2</td>
                                 </tr>
                                 <tr style="background-color: #cae6e1">
-                                    <td class="albumdanhsach0" onClick="Playnhac(2);">3. Bai hat 3</td>
-                                    <td style="width: 360px">Ca si</td>
+									<td style="width: 20px">3. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(2);">Bài hát 3</td>
+                                    <td style="width: 340px" class="albumcasi">Ca sĩ 3</td>
                                 </tr>
                                 <tr>
-                                    <td class="albumdanhsach0" onClick="Playnhac(3);">4. Bai hat 4</td>
-                                    <td style="width: 360px">Ca si</td>
+									<td style="width: 20px">4. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(3);">Bài hát 4</td>
+                                    <td style="width: 340px" class="albumcasi">Ca sĩ 4</td>
                                 </tr>
                                 <tr style="background-color: #cae6e1">
-                                    <td class="albumdanhsach0" onClick="Playnhac(4);">5. Bai hat 5</td>
-                                    <td style="width: 360px">Ca si</td>
+									<td style="width: 20px">5. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(4);">Bài hát 5</td>
+                                    <td style="width: 340px" class="albumcasi">Ca sĩ 5</td>
                                 </tr>
                                 <tr>
-                                    <td class="albumdanhsach0" onClick="Playnhac(5);">6. Bai hat 6</td>
-                                    <td style="width: 360px">Ca si</td>
+									<td style="width: 20px">6. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(5);">Bài hát 6</td>
+                                    <td style="width: 340px" class="albumcasi">Ca sĩ 6</td>
                                 </tr>
                             </table>
                         </div>
@@ -505,6 +536,8 @@
 	</div>
 	<script>
 		document.getElementById("defaultOpen").click();
+		document.getElementById("defaultplay").click();
+		document.getElementById("audioaudio").pause();
 	</script>
 </body>
 </html>

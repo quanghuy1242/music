@@ -565,7 +565,8 @@ nav ul li:hover #subs {
 audio {
 	margin-top: -1px;
 	border: 1px solid #cacaca;
-	width: 738px;
+	width: 675px;
+	border-left: 0px;
 }
 
 /* tab */
@@ -671,12 +672,17 @@ audio {
 	width: 350px;
 	height: 40px;
 	padding-left: 10px;
-}
-.albumdanhsach1{
-	width: 350px;
-	height: 40px;
-	padding-left: 10px;
-}
-#mediainfo table tr td{
 	cursor: pointer;
+}
+.nextprev{
+	padding-top: 2px;
+	/* margin-top: 20px; */
+	width: 32px;
+	height: 33px;
+	border: 0px;
+	outline: none;
+	float: left;
+	background-color: #fafafa;
+	border-bottom: 1px solid #cacaca;
+	/* border-left: 1px solid #cacaca; */
 }
