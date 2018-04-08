@@ -686,3 +686,10 @@ audio {
 	border-bottom: 1px solid #cacaca;
 	/* border-left: 1px solid #cacaca; */
 }
+#thongtinalbum{
+	margin-top: 10px;
+	width: 717px;
+	height: auto;
+	border: 1px solid #cacaca;
+	padding: 10px;
+}
