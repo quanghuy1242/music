@@ -693,3 +693,6 @@ audio {
 	border: 1px solid #cacaca;
 	padding: 10px;
 }
+table tr td:first-child{
+	padding-left: 10px;
+}

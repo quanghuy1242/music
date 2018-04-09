@@ -24,7 +24,7 @@ function showSlides(n) {
 }
 // NUT SEARCH
 function Nutsearch() {
-  var x = document.getElementsByClassName("subs");
+  var x = document.getElementsByClassName("sub");
   if (x[0].style.display == "none") {
     x[0].style.display = "block";
   } else{
