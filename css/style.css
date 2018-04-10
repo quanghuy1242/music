@@ -67,7 +67,7 @@ a:hover{
 section {
     width: 740px;
     background-color: white;
-    /* height: 1306px; */
+    height: auto;
     overflow: auto;
     float: left;
 }
@@ -695,4 +695,67 @@ audio {
 }
 table tr td:first-child{
 	padding-left: 10px;
+}
+#anhbianghesi{
+	width: 732px;
+	height: 200px;
+	background-color: #398791;
+}
+#anhnghesi{
+	width: 130px;
+	height: 130px;
+	background-color: white;
+	position: absolute;
+	top: 110px;
+	left: 135px;
+	/* border-radius: 50px; */
+}
+#tenghesi{
+	float: left;
+	position: absolute;
+	top: 155px;
+	left: 275px;
+}
+#thongtincasi{
+	width: 710px;
+	height: auto;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #cacaca;
+}
+#baihatcuanghesi{
+	width: 710px;
+	height: auto;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #cacaca;
+}
+
+#baihatcuanghesi li {
+	height: 40px;
+	border-bottom: 1px solid #cacaca;
+	line-height: 40px;
+}
+#abumnghesi{
+	width: 710px;
+	height: 200px;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #cacaca;
+	display: block;
+}
+#videonghesi{
+	width: 710px;
+	height: 150px;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #cacaca;
+}
+.hinhnghesilq{
+	width: 80px;
+	height: 80px;
+	background-color: #398791;
+	float: left;
+	margin-bottom: 10px;
+	/* border-radius: 27px; */
 }
