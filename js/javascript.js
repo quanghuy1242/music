@@ -47,4 +47,14 @@ function opentab(evt, tabname) {
   evt.currentTarget.className += " active";
 }
 
-
+function themthongtinngsi() {
+  var more = document.getElementById("hiddeninfo");
+  var morex = document.getElementById("themthongtin");
+  if(more.style.display == "none"){
+    more.style.display = "block";
+    morex.value = morex.value.replace("Xem thêm","Ẩn bớt");
+  }else{
+    more.style.display = "none";
+    morex.value = morex.value.replace("Ẩn bớt","Xem thêm")
+  }
+}
