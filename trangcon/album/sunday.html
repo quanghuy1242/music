@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="../../css/style.css" type="text/css">
 <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
-<script src="../../js/javascript.js"></script>
 </head>
 <body>
 	<div id="outer">
@@ -96,7 +95,7 @@
 									<button class="nextprev"onclick="next()">
 											<img src="next.svg" alt="next" width="23" style="padding-top: 1px">
 									</button>
-								<audio controls controlsList="nodownload" id="audioaudio">
+								<audio controls controlsList="nodownload" id="audioaudio" onended="next()">
 									<p>Your browser does not support the audio element.</p>
 									<source src="">
 								</audio>
@@ -110,35 +109,8 @@
 						<div><strong>Thông tin album:</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</div>
 					</div>
 					<script>
-						var tenbh = document.getElementsByClassName("albumdanhsach0");
-						var tencs = document.getElementsByClassName("albumcasi");
-						var nhac = new Audio();
 						var nhacs = ["../../musicdata/1.mp3","../../musicdata/1.mp3","../../musicdata/1.mp3","../../musicdata/1.mp3","../../musicdata/1.mp3","../../musicdata/1.mp3"];
-						function Playnhac(i){
-							// nhac.src = nhacs[i];
-							// nhac.play();
-							document.getElementById("tenbaihat").innerHTML=tenbh[i].innerHTML;
-							document.getElementById("tencasi").innerHTML=tencs[i].innerHTML;
-							document.getElementById("audioaudio").src = nhacs[i];
-							document.getElementById("audioaudio").autoplay="autoplay";
-							document.getElementById("stt").innerHTML = i+1;
-						}
-						function prev(){
-							var stt = document.getElementById("stt").innerHTML;
-							document.getElementById("tenbaihat").innerHTML=tenbh[stt-2].innerHTML;
-							document.getElementById("tencasi").innerHTML=tencs[stt-2].innerHTML;
-							document.getElementById("audioaudio").src = nhacs[stt-2];
-							document.getElementById("audioaudio").autoplay="autoplay";
-							document.getElementById("stt").innerHTML = stt-1;
-						}
-						function next(){
-							var stt = document.getElementById("stt").innerHTML;
-							document.getElementById("tenbaihat").innerHTML=tenbh[stt].innerHTML;
-							document.getElementById("tencasi").innerHTML=tencs[stt].innerHTML;
-							document.getElementById("audioaudio").src = nhacs[stt];
-							document.getElementById("audioaudio").autoplay="autoplay";
-							document.getElementById("stt").innerHTML = parseInt(stt)+1;
-						}
+						
 					</script>
                         <div id="mediainfo">
 							<table style="border-collapse: collapse">
@@ -540,10 +512,6 @@
 			</div>
 		</footer>
 	</div>
-	<script>
-		document.getElementById("defaultOpen").click();
-		document.getElementById("defaultplay").click();
-		document.getElementById("audioaudio").pause();
-	</script>
+	<script src="../../js/javascript.js"></script>
 </body>
 </html>
