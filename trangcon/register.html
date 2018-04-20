@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="../css/style.css" type="text/css">
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/jquery.validate.min.js"></script>
 <script src="../js/javascript.js"></script>
 </head>
 <body>
@@ -94,24 +96,28 @@
 		<div id="sectionside">
 			<section id="ddnn">
                     <article id="dangki" style="border-bottom: 1px solid slategrey;">
-                            <form>
+                            <form name="dki">
                                     <table>
                                         
-                                        <caption><H2 style="padding-left: 100px">ĐĂNG KÍ:</H2></caption> 
+                                        <tr>
+											<td colspan="2">
+												<H2 style="padding-left: 170px">ĐĂNG KÍ:</H2>
+											</td>
+										</tr> 
                                         
                                         <tr>
                                             <td>New username:</td>
-                                            <td><input type="text" name="" id="" required></td>
+                                            <td><input type="text" name="tendangki" id="tendangki" ></td>
                                         </tr>
                                         <tr>
                                                 <td>Email:</td>
-                                                <td><input type="mail" name="" id="" required></td>
+                                                <td><input type="mail" name="email" id="email" ></td>
                                         </tr>
                                         <tr>
                                                 <td>Birthday:</td>
                                                 <td>
-                                <input type="text" placeholder="Ngày" style="width: 76px;text-align: center">
-                                <select name="G" id="chonthang">
+                                <input type="text" placeholder="Ngày" name="ngay" id="ngay"> <br>
+                                <select name="thang" id="chonthang" style="width: 258px;">
                                     <option value="1">Tháng 1</option>
                                     <option value="2">Tháng 2</option>
                                     <option value="3">Tháng 3</option>
@@ -124,53 +130,52 @@
                                     <option value="10">Tháng 10</option>
                                     <option value="11">Tháng 11</option>
                                     <option value="12">Tháng 12</option>
-                                </select>
-                                <input type="text" placeholder="Năm" style="width: 76px;text-align: center">
+                                </select><br>
+                                <input type="text" placeholder="Năm" name="nam" id="nam">
                             </td>
                                         </tr>
                                         <tr style="height: 40px;">
                                                 <td>Gender:</td>
                                                 <td>
-                            <!-- <label class="container">Four
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                            </label> -->
-                                                    <input type="radio" name="gt" id="" checked> Nam
-                                                    <input type="radio" name="gt" id="" style="margin-left: 80px"> Nữ
+                                                    <input value="Nam" type="radio" name="gt" checked> Nam
+                                                    <input value="Nữ" type="radio" name="gt" style="margin-left: 80px"> Nữ
                                                 </td>
                                         </tr>
                                         <tr>
                                                 <td>New password:</td>
-                                                <td><input type="password" name="" id="" required></td>
+                                                <td><input type="password" name="pass" id="pa"></td>
                                         </tr>
                                         <tr>
                                                 <td>Repassword:</td>
-                                                <td><input type="password" name="" id="" required></td>
+                                                <td><input type="password" name="repass" id="repa"></td>
                                         </tr>
                                         <tr style="height: 40px;">
-                                                <td colspan="2" style="padding-left: 100px"><input type="checkbox" name="" id="" required> Khi đăng kí, bạn chấp nhận điều khoản</td>
+                                                <td colspan="2" style="padding-left: px"><input type="checkbox" name="dieukhoan" id="" checked>&nbsp; Khi đăng kí, bạn chấp nhận điều khoản của chúng tôi </td>
                                         </tr>
                                         <tr>
-                                                <td colspan="2" style="text-align: center"><input type="submit" value="REGISTER" style="margin-left: 100px"></td>
+                                                <td colspan="2" style="padding-left: 80px;"><input type="submit" value="REGISTER" style="margin-left: 100px" id="nutdk"></td>
                                         </tr>
                                     </table>
                                 </form>
                     </article>
 				<article id="dangnhap">
-                    <form>
+                    <form name="dnhap">
                         <table>
-                            <caption><H2 style="margin-left: 105px">ĐĂNG NHẬP:</H2></caption>
-                            <tr><td colspan="2" style="padding-left: 180px">Đã có tài khoản?</td></tr>
+							<tr>
+								<td colspan="2">
+									<H2 style="padding-left: 170px">ĐĂNG NHẬP:</H2>
+								</td>
+							</tr>
                             <tr>
-                                <td>Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td><input type="text" name="" id="" required></td>
+                                <td>Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> 
+                                <td><input type="text" name="tendangnhap" id="tendangnhap"></td> 
                             </tr>
                             <tr>
                                     <td>Password:</td>
-                                    <td><input type="password" name="" id="" required></td>
+                                    <td><input type="password" name="password" id="password"></td>
                             </tr>
                             <tr>
-                                    <td colspan="2" style="text-align: center"><input type="submit" value="LOGIN" style="margin-left: 110px"></td>
+                                    <td colspan="2" style="padding-left: 100px;"><input type="submit" value="LOGIN" style="margin-left: 110px"></td>
                             </tr>
                         </table>
                     </form>

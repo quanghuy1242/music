@@ -230,8 +230,9 @@ input[type=button]:hover,input[type=submit]:hover {
 	padding-left: 5px;
 	border: 1px solid rgb(166, 204, 198);
 	vertical-align: middle;
-	margin-left: 3px;
-	margin-right: 3px;
+	/* margin-left: 3px; */
+	/* margin-right: 3px; */
+	margin: 0px 0 5px 0;
 	transition: 0.5s;
 }
 #chonthang:hover {
@@ -770,4 +771,31 @@ table tr td:first-child{
 	float: left;
 	margin-bottom: 10px;
 	/* border-radius: 27px; */
+}
+/* dinh dang loi validate() */
+input.error {
+	border: 1px solid red;
+}
+input.error:focus {
+	border: 1px solid red;
+}
+label.error {
+	margin-left: 10px;
+	color: white;
+	background-color: red;
+	padding: 5px 20px 5px 20px;
+	border-radius: 30px;
+	font-size: smaller;
+	animation: laclac 0.8s linear infinite;
+}
+@keyframes laclac {
+	0% {
+		margin-left: 20px;
+	}
+	50% {
+		margin-left: 10px;
+	}
+	100% {
+		margin-left: 20px;
+	}
 }
