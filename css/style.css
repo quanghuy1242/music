@@ -61,14 +61,14 @@ a:hover{
 	width: 1100px;
     height: auto;
 	background-color: white;
-	overflow: auto;
+	/* overflow: auto; */
 	margin-top: 50px;
 }
 section {
     width: 740px;
     background-color: white;
     height: auto;
-    overflow: auto;
+    /* overflow: auto; */
     float: left;
 }
 aside {
@@ -84,6 +84,8 @@ footer {
     background-color: #a6ccc6;
 	/* text-align: center; */
 	margin-top: 10px;
+	float: left;
+	width: 790px;
 }
 ul {
 	list-style-type: none;
@@ -146,19 +148,20 @@ nav ul li:hover a{
 
 .nghesi {
 	width: 134px;
-	height: 170px;
+	/* height: 170px; */
 	float: left;
 	margin: 0px 0px 10px 10px;
 }
 .hinh {
 	width: 134px;
 	height: 134px;
+	margin-bottom: 5px;
 }
 .titlehinh {
-	height: 36px;
+	/* height: 36px; */
 	width: 134px;
 	text-align: center;
-	line-height: 36px;
+	/* line-height: 36px; */
 }
 
 .bxh {
@@ -382,8 +385,13 @@ h2 {
 	border-bottom: 1px solid #9b9b9b;
 	margin-right: 10px;
 }
-#a2,#anext{
-	height: 230px;
+#a2{
+	height: 250px;
+	display: block;
+}
+#anext {
+	height: 250px;
+	display: block;
 }
 #dangnhap {
 	padding: 10px 0px 10px 320px;
@@ -641,15 +649,19 @@ audio {
 }
 #a2 a:hover .smallplay {
 	opacity: 0.8;
-	animation: myani 0.2s forwards;
+	animation: zoomIn 0.2s forwards;
+}
+#ds a:hover .smallplay {
+	opacity: 0.8;
+	animation: zoomIn 0.2s forwards;
 }
 #anext a:hover .smallplay {
 	opacity: 0.8;
-	animation: myani 0.2s forwards;
+	animation: zoomIn 0.2s forwards;
 }
 #abumnghesi a:hover .smallplay {
 	opacity: 0.8;
-	animation: myani 0.2s forwards;
+	animation: zoomIn 0.2s forwards;
 }
 #abumnghesi a:hover img {
 	opacity: 0.7;
@@ -658,18 +670,19 @@ audio {
 #abumnghesi a img{
 	transition: 0.5s;
 }
-
-@keyframes myani{
-	0%{
-		width: 3px;
-		margin: 60px 0px 0px -70px;
-	}
-	100%{
-		width: 50px;
-		margin: 45px 0px 0px -90px;
-	}
+img[src="play.svg"]{
+	fill: white;
 }
-
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity: 1
+    }
+}
 /* nut play danh sach */
 .smallplayds{
 	position: absolute;
@@ -782,11 +795,11 @@ input.error:focus {
 label.error {
 	margin-left: 10px;
 	color: white;
-	background-color: red;
+	background-color: rgba(255, 0, 0, 0.733);
 	padding: 5px 20px 5px 20px;
 	border-radius: 30px;
 	font-size: smaller;
-	animation: laclac 0.8s linear infinite;
+	animation: laclac 0.8s infinite;
 }
 @keyframes laclac {
 	0% {
