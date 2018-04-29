@@ -562,7 +562,8 @@ nav ul li:hover #subs {
 	width: 717px;
 	height: auto;
 	border: 1px solid #cacaca;
-	padding: 10px
+	padding: 10px;
+	min-height: 100px;
 }
 #loibaihat{
 	/* width: 740px; */
@@ -749,6 +750,7 @@ img[src="play.svg"]{
 	height: auto;
 	border: 1px solid #cacaca;
 	padding: 10px;
+	min-height: 100px;
 }
 table tr td:first-child{
 	padding-left: 10px;
