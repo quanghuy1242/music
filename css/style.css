@@ -180,6 +180,13 @@ nav ul li:hover a{
 	text-align: center;
 	line-height: 50px;
 }
+.bhcsbxh {
+	width: auto;
+	float: left;
+	height: 50px;
+	float: left;
+	/* margin-right: 50px; */
+}
 .chude {
 	width: 320px;
 	height: 94px;
@@ -384,14 +391,21 @@ h2 {
 .nghesids {
 	float: left !important;
 }
+#khung1 .luotnghe {
+	margin-left: -40px;
+}
+#khung2 .luotnghe {
+	margin-left: -40px;
+}
 .luotnghe {
-	float: right;
-	/* float: none; */
-	position: absolute;
-	margin-top: 25px;
 	color: rgb(66, 66, 66);
 	font-size: smaller;
-	margin-left: -25px;
+	line-height: 50px;
+	height: 50px;
+}
+.tabcontent .luotnghe {
+	float: right;
+	/* margin-right: -2000px; */
 }
 .material-icons {
 	vertical-align: middle;
