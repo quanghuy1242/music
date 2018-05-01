@@ -176,6 +176,11 @@ nav ul li:hover a{
 	text-align: center;
 	line-height: 50px;
 }
+.bxhalbumimg {
+	height: 50px;
+	float: left;
+	margin-right: 15px;
+}
 .bhcsbxh {
 	width: auto;
 	float: left;
@@ -274,9 +279,6 @@ nav ul li:hover ul {
 	margin-left: 0px;
 	display: block;
 }
-nav ul li:hover ul li {
-	animation: loadaa 0.5s forwards;
-}
 .sub li a {
 	text-transform: none;
 	color: black !important;
@@ -298,9 +300,6 @@ nav ul li:hover ul li {
 	animation: load 0.5s forwards;
 	margin-left: 0px;
 	display: block;
-}
-#dndk li:hover ul li {
-	animation: loadaa 0.5s forwards;
 }
 @keyframes loadaa{
 	0%{
@@ -409,10 +408,10 @@ h2 {
 	border-bottom: 1px solid #9b9b9b;
 	margin-right: 10px;
 }
-#a2{
-	/* height: 250px; */
-	/* display: block; */
-}
+/* #a2{
+	height: 250px;
+	display: block;
+} */
 #anext {
 	height: 260px;
 	/* display: block; */
@@ -597,9 +596,11 @@ audio {
 }
 
 /* tab */
-.tabcontent {
-	display: none;
+.tabcontent,.bxhds,.bxhdshq {
+	/* display: none; */
 	/* animation: fade 0.1s; */
+	margin-top: 15px;
+	/* width: 100%; */
 }
 @keyframes fade{
 	from{
@@ -617,9 +618,10 @@ audio {
 		opacity: 0;
 	}
 }
-.tablinks {
+.tablinks,.bxhnnnut,.bxhnnnuthq {
 	color: black;
-	width: 170px;
+	/* width: 170px; */
+	/* width: calc(100% / 3); */
 	height: 40px;
 	background-color: white;
 	border: 0px;
@@ -709,8 +711,8 @@ audio {
 @keyframes zoomIn {
     from {
         opacity: 0;
-        -webkit-transform: scale3d(.3, .3, .3);
-        transform: scale3d(.3, .3, .3)
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3)
     }
     50% {
         opacity: 1

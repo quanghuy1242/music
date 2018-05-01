@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   $("form[name='dnhap']").validate({
     rules : {
       tendangnhap: {
@@ -98,7 +99,6 @@ $(document).ready(function () {
     }
   });
 
-
 });
 var slideIndex = 1;
 var slides = document.getElementsByClassName("imggg");
@@ -126,7 +126,7 @@ function showSlides(n) {
 }
 // NUT SEARCH
 function Nutsearch() {
-  var x = document.getElementsByClassName("sub");
+  var x = document.getElementsByClassName("subsub");
   if (x[0].style.display == "none") {
     x[0].style.display = "block";
   } else {
@@ -134,19 +134,29 @@ function Nutsearch() {
   }
 }
 //tab
-function opentab(evt, tabname) {
+function opentab(evt, tabname, tablinks, tabcontent) {
 
   var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent = document.getElementsByClassName(tabcontent);
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName(tablinks);
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(tabname).style.display = "block";
   evt.currentTarget.className += " active";
+
+
+  // var nuttab = document.getElementsByClassName(tablinks);
+  for(var i in tablinks) {
+    var cdtab = 100 / tablinks.length;
+    var cdtabstring = cdtab +'%';
+    tablinks[i].style.width = cdtabstring;
+    // alert(tablinks.length);
+  }
+
 }
 
 function themthongtinngsi() {
