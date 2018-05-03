@@ -477,7 +477,7 @@ h2 {
 	background: white;
 } */
 .imggg{
-	display: block;
+	display: none;
 	position: absolute;
 	animation: fade 1s;
 }

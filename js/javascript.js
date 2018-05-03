@@ -100,11 +100,13 @@ $(document).ready(function () {
   });
 
 });
+
+
 var slideIndex = 1;
-var slides = document.getElementsByClassName("imggg");
-for (var i = 0; i < slides.length; i++) {
-  slides[i].style.display = "none";
-}
+// var slides = document.getElementsByClassName("imggg");
+// for (var i = 0; i < slides.length; i++) {
+//   slides[i].style.display = "none";
+// }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
@@ -123,6 +125,11 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex - 1].style.display = "block";
+}
+
+function nextslide () {
+  slideIndex++;
+  showSlides(slideIndex);
 }
 // NUT SEARCH
 function Nutsearch() {

@@ -97,12 +97,13 @@
 						<div class="imggg"> <a target="_blank" href="https://quanghuy1242.wordpress.com/"><img src="image/4.png" alt="" width="710px" height="300px"></a> </div>
 						<div class="imggg"> <a target="_blank" href="https://quanghuy1242.wordpress.com/"><img src="image/5.png" alt="" width="710px" height="300px"></a> </div>
 					</div>
+					<button onclick="nextslide()" id="nextslidehtml" style="display: none">></button>
 					<div>
 						<div class="smallbaner"> <img src="image/1.png" alt="" width="132px" height="56px" onclick="currentSlide(1)" class="demo"> </div>
 						<div class="smallbaner"> <img src="image/2.png" alt="" width="132px" height="56px" onclick="currentSlide(2)" class="demo"> </div>
 						<div class="smallbaner"> <img src="image/3.png" alt="" width="132px" height="56px" onclick="currentSlide(3)" class="demo"> </div>
 						<div class="smallbaner"> <img src="image/4.png" alt="" width="132px" height="56px" onclick="currentSlide(4)" class="demo"> </div>
-						<div class="smallbaner" style="margin-right: 0"> <img src="image/5.png" alt="" width="132px" height="56px" onclick="currentSlide(5)" class="demo"> </div>
+						<div class="smallbaner"> <img src="image/5.png" alt="" width="132px" height="56px" onclick="currentSlide(5)" class="demo"> </div>
 					</div>
 				</article>
 				<article id="anext">
@@ -578,24 +579,17 @@
 		</footer>
 	</div>
 	<script>
+			document.getElementsByClassName("demo")[0].click();
+
+			setInterval(function(){
+				nextslide();
+			},4000);
+
 			var defaultOpen = document.getElementsByClassName("defaultOpen");
 			for (var i in defaultOpen) {
 				defaultOpen[i].click();
 			}
 
-			// autochange slide in 4s
-			var myslides = 0;
-			banner();
-			function banner(){
-			var i;
-			var slides = document.getElementsByClassName("imggg");
-			for(i = 0;i<slides.length;i++)
-				{slides[i].style.display = "none";}
-			myslides++;
-			if(myslides>slides.length) {myslides=1;}
-			slides[myslides - 1].style.display = "block";
-			setTimeout(banner,4000);
-			}
 	</script>
 </body>
 </html>
