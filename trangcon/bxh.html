@@ -79,8 +79,13 @@
 		</div>
 		<div id="sectionside">
 			<section>
-                <div>
-					<h2 style="margin: 5px 0 10px 0">BẢNG XẾP HẠNG VIỆT NAM</h2>
+				<h2>BẢNG XẾP HẠNG</h2>
+				<div id="ql">
+					<button class="tablon defaultOpen" onclick="opentab(event, 'vina', 'tablon', 'tabcontentlon')">VIỆT NAM</button>
+					<button class="tablon" onclick="opentab(event, 'usuk', 'tablon', 'tabcontentlon')">US-UK</button>
+					<button class="tablon" onclick="opentab(event, 'hqhq', 'tablon', 'tabcontentlon')">HÀN QUỐC</button>
+				</div>
+                <div class="tabcontentlon" id="vina">
 					<div>
 						<button class="tablinks defaultOpen" onclick="opentab(event,'bhvn','tablinks','tabcontent')">Bài Hát</button>
                         <button class="tablinks" onclick="opentab(event,'abvn','tablinks','tabcontent')">Albums</button>
@@ -181,7 +186,101 @@
 										</div>
 									</div>
 								</li>
-							</ul>
+								<hr>
+										<li class="bxh">
+												<div class="thuhang">
+														<strong>06</strong>
+													</div>
+													<div style="width: auto;float: left;height: 50px;float: left;">
+														<div style="height: 25px">
+															<a href="#">Young and Beautiful </a>
+														</div>
+														<a href="#">
+														<div style="height: 25px;font-size: smaller; color: #464545">
+															Lana Del Rey
+														</div>
+														</a>
+														<div style="height: 25px;font-size: smaller; color: #464545">
+														</div>
+													</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong>07</strong>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">All Falls Down </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Alan Walker, Noah Cyrus
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong>08</strong>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">Never Be The Same </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Camila Cabello
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong>09</strong>
+											</div>
+											<a href="#">
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													The Middle
+												</div>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Zedd, Maren Morris, Grey
+												</div>
+											</div>
+											</a>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+												<strong>10</strong>
+											</div>
+											<a href="#">
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													For You
+												</div>
+												<div style="height: 25px; font-size: smaller; color: #464545">
+													Nobody
+												</div>
+											</div>
+											</a>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px; font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+						</ul>
 					</div>
 					
 					<div class="tabcontent" id="abvn">
@@ -402,8 +501,7 @@
 							</ul>
                     </div>
                 </div>
-                <div>
-					<h2 style="margin: 5px 0 10px 0">BẢNG XẾP HẠNG US-UK</h2>
+                <div class="tabcontentlon" id="usuk">
 					<div>
 						<button class="bxhnnnut defaultOpen" onclick="opentab(event,'bhus','bxhnnnut','bxhds')">Bài Hát</button>
                         <button class="bxhnnnut" onclick="opentab(event,'abus','bxhnnnut','bxhds')">Albums</button>
@@ -411,65 +509,65 @@
 					</div>
 					<div class="bxhds" id="bhus">
 						<ul>
-								<li class="bxh">
-										<div class="thuhang">
-												<strong style="color: blue">01</strong>
-											</div>
-											<div style="width: auto;float: left;height: 50px;float: left;">
-												<div style="height: 25px">
-													<a href="#">Young and Beautiful </a>
-												</div>
-												<a href="#">
-												<div style="height: 25px;font-size: smaller; color: #464545">
-													God
-												</div>
-												</a>
-												<div style="height: 25px;font-size: smaller; color: #464545">
-												</div>
-											</div>
-								</li>
-								<hr>
-								<li class="bxh">
-									<div class="thuhang">
-										<strong style="color: brown">02</strong>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: blue">01</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Young and Beautiful </a>
 									</div>
-									<div style="width: auto;float: left;height: 50px;float: left;">
-										<div style="height: 25px">
-											<a href="#">All Falls Down </a>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Lana Del Rey
 										</div>
-										<a href="#">
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: brown">02</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">All Falls Down </a>
+									</div>
+									<a href="#">
 										<div style="height: 25px;font-size: smaller; color: #464545">
 											Alan Walker, Noah Cyrus
 										</div>
-										</a>
-										<div style="height: 25px;font-size: smaller; color: #464545">
-										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
 									</div>
-								</li>
-								<hr>
-								<li class="bxh">
-									<div class="thuhang">
-										<strong style="color: yellow">03</strong>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: yellow">03</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Never Be The Same </a>
 									</div>
-									<div style="width: auto;float: left;height: 50px;float: left;">
-										<div style="height: 25px">
-											<a href="#">Never Be The Same </a>
-										</div>
-										<a href="#">
+									<a href="#">
 										<div style="height: 25px;font-size: smaller; color: #464545">
 											Camila Cabello
 										</div>
-										</a>
-										<div style="height: 25px;font-size: smaller; color: #464545">
-										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
 									</div>
-								</li>
-								<hr>
-								<li class="bxh">
-									<div class="thuhang">
-										<strong>04</strong>
-									</div>
-									<a href="#">
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>04</strong>
+								</div>
+								<a href="#">
 									<div style="width: auto;float: left;height: 50px;float: left;">
 										<div style="height: 25px">
 											The Middle
@@ -478,18 +576,18 @@
 											Zedd, Maren Morris, Grey
 										</div>
 									</div>
-									</a>
-									<div style="width: auto;float: left;height: 50px;float: left;">
-										<div style="height: 25px;font-size: smaller; color: #464545">
-										</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px;font-size: smaller; color: #464545">
 									</div>
-								</li>
-								<hr>
-								<li class="bxh">
-									<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
-										<strong>05</strong>
-									</div>
-									<a href="#">
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+									<strong>05</strong>
+								</div>
+								<a href="#">
 									<div style="width: auto;float: left;height: 50px;float: left;">
 										<div style="height: 25px">
 											For You
@@ -498,13 +596,107 @@
 											Nobody
 										</div>
 									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px; font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>06</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Young and Beautiful </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Lana Del Rey
+										</div>
 									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>07</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">All Falls Down </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>08</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Never Be The Same </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>09</strong>
+								</div>
+								<a href="#">
 									<div style="width: auto;float: left;height: 50px;float: left;">
-										<div style="height: 25px; font-size: smaller; color: #464545">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
 										</div>
 									</div>
-								</li>
-							</ul>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+									<strong>10</strong>
+								</div>
+								<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px; font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 					
 					<div class="bxhds" id="abus">
@@ -725,8 +917,7 @@
 							</ul>
                     </div>
                 </div>
-                <div>
-					<h2 style="margin: 5px 0 10px 0">BẢNG XẾP HẠNG HÀN QUỐC</h2>
+                <div class="tabcontentlon" id="hqhq">
 					<div>
 						<button class="bxhnnnuthq defaultOpen" onclick="opentab(event,'bhhq','bxhnnnuthq','bxhdshq')">Bài Hát</button>
                         <button class="bxhnnnuthq" onclick="opentab(event,'abhq','bxhnnnuthq','bxhdshq')">Albums</button>
@@ -734,65 +925,65 @@
 					</div>
 					<div class="bxhdshq" id="bhhq">
 						<ul>
-								<li class="bxh">
-										<div class="thuhang">
-												<strong style="color: blue">01</strong>
-											</div>
-											<div style="width: auto;float: left;height: 50px;float: left;">
-												<div style="height: 25px">
-													<a href="#">Young and Beautiful </a>
-												</div>
-												<a href="#">
-												<div style="height: 25px;font-size: smaller; color: #464545">
-													God
-												</div>
-												</a>
-												<div style="height: 25px;font-size: smaller; color: #464545">
-												</div>
-											</div>
-								</li>
-								<hr>
-								<li class="bxh">
-									<div class="thuhang">
-										<strong style="color: brown">02</strong>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: blue">01</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Young and Beautiful </a>
 									</div>
-									<div style="width: auto;float: left;height: 50px;float: left;">
-										<div style="height: 25px">
-											<a href="#">All Falls Down </a>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Lana Del Rey
 										</div>
-										<a href="#">
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: brown">02</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">All Falls Down </a>
+									</div>
+									<a href="#">
 										<div style="height: 25px;font-size: smaller; color: #464545">
 											Alan Walker, Noah Cyrus
 										</div>
-										</a>
-										<div style="height: 25px;font-size: smaller; color: #464545">
-										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
 									</div>
-								</li>
-								<hr>
-								<li class="bxh">
-									<div class="thuhang">
-										<strong style="color: yellow">03</strong>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: yellow">03</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Never Be The Same </a>
 									</div>
-									<div style="width: auto;float: left;height: 50px;float: left;">
-										<div style="height: 25px">
-											<a href="#">Never Be The Same </a>
-										</div>
-										<a href="#">
+									<a href="#">
 										<div style="height: 25px;font-size: smaller; color: #464545">
 											Camila Cabello
 										</div>
-										</a>
-										<div style="height: 25px;font-size: smaller; color: #464545">
-										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
 									</div>
-								</li>
-								<hr>
-								<li class="bxh">
-									<div class="thuhang">
-										<strong>04</strong>
-									</div>
-									<a href="#">
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>04</strong>
+								</div>
+								<a href="#">
 									<div style="width: auto;float: left;height: 50px;float: left;">
 										<div style="height: 25px">
 											The Middle
@@ -801,18 +992,18 @@
 											Zedd, Maren Morris, Grey
 										</div>
 									</div>
-									</a>
-									<div style="width: auto;float: left;height: 50px;float: left;">
-										<div style="height: 25px;font-size: smaller; color: #464545">
-										</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px;font-size: smaller; color: #464545">
 									</div>
-								</li>
-								<hr>
-								<li class="bxh">
-									<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
-										<strong>05</strong>
-									</div>
-									<a href="#">
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+									<strong>05</strong>
+								</div>
+								<a href="#">
 									<div style="width: auto;float: left;height: 50px;float: left;">
 										<div style="height: 25px">
 											For You
@@ -821,13 +1012,107 @@
 											Nobody
 										</div>
 									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px; font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>06</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Young and Beautiful </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Lana Del Rey
+										</div>
 									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>07</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">All Falls Down </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>08</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Never Be The Same </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>09</strong>
+								</div>
+								<a href="#">
 									<div style="width: auto;float: left;height: 50px;float: left;">
-										<div style="height: 25px; font-size: smaller; color: #464545">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
 										</div>
 									</div>
-								</li>
-							</ul>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+									<strong>10</strong>
+								</div>
+								<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px; font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 					
 					<div class="bxhdshq" id="abhq">
@@ -1172,8 +1457,6 @@
         for(var i in defaultOpen) {
             defaultOpen[i].click();
         }
-		document.getElementById("defaultplay").click();
-		document.getElementById("audioaudio").pause();
 	</script>
 </body>
 </html>
