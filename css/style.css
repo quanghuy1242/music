@@ -620,8 +620,6 @@ audio {
 }
 .tablinks,.bxhnnnut,.bxhnnnuthq,.tablon {
 	color: black;
-	/* width: 170px; */
-	/* width: calc(100% / 3); */
 	height: 40px;
 	background-color: white;
 	border: 0px;
@@ -629,29 +627,23 @@ audio {
 	outline: none;
 	cursor: pointer;
 	font-size: 17px;
-	/* border-bottom: 1px solid #398791; */
 }
 .tablon {
-	/* width: 100px!important; */
-	/* position: absolute;	 */
-	/* border-radius: 50px; */
+	border: 1px solid transparent;
 	border-bottom: 1px solid #398791;
 	margin-right: -4px;
 	margin-top: 10px;
 }
 .tabcontentlon {
-	/* zoom: ; */
 	padding: 10px;
 	border: 1px solid #398791;
 	border-top: 0px;
-	margin-top: -1px;
-	/* background-color: yellow; */
 }
-#ql .active {
+#ql>.active {
 	color: black;
-	background-color: white;
+	background-color: #fff;
 	border: 1px solid #398791;
-	border-bottom: 0px;
+	border-bottom: 1px solid transparent;
 }
 .active{
 	background-color: #398791;
