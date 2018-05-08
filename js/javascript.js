@@ -38,26 +38,20 @@ function Nutsearch() {
 }
 //tab
 function opentab(evt, tabname, tablinks, tabcontent) {
-
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName(tabcontent);
-  for (i = 0; i < tabcontent.length; i++) {
+  var tabcontent = document.getElementsByClassName(tabcontent);
+  var tablinks = document.getElementsByClassName(tablinks);
+  for (var i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName(tablinks);
-  for (i = 0; i < tablinks.length; i++) {
+  
+  for (var i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(tabname).style.display = "block";
   evt.currentTarget.className += " active";
 
-
-  // var nuttab = document.getElementsByClassName(tablinks);
   for(var i in tablinks) {
-    var cdtab = 100 / tablinks.length;
-    var cdtabstring = cdtab +'%';
-    tablinks[i].style.width = cdtabstring;
-    // alert(tablinks.length);
+    tablinks[i].style.width = 100 / tablinks.length +'%';
   }
 
 }
@@ -105,6 +99,10 @@ function next() {
   document.getElementById("audioaudio").autoplay = "autoplay";
   document.getElementById("stt").innerHTML = parseInt(stt) + 1;
 }
+$(document).ready(function () {
+  var defaultOpen = document.getElementsByClassName("defaultOpen");
+			for (var i in defaultOpen) {
+				defaultOpen[i].click();
+      }
+});
 
-document.getElementById("defaultplay").click();
-document.getElementById("audioaudio").pause();
