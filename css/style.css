@@ -538,21 +538,28 @@ nav ul li:hover #subs {
 #tenbaihat {
 	display: block;
 	text-align: center;
+	color: white;
 }
 #tencasi{
 	font-weight: lighter;
 	font-size: 17px;
 	display: block;
 	text-align: center;
-	color: #646464;
+	color: #e0e0e0;
 }
 #khungplayer{
 	border: 1px solid #cacaca;
 	margin-top: 15px;
 	width: 738px;
 	height: 73px;
-	background-color: #cae6e1;
+	/* background-color: #cae6e1; */
 	padding-top: 10px;
+	/* filter:blur(2px);*/
+	/* background-position: 0px; */
+	background-image: url(../image/vnbxh.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/* color: white!important; */
 }
 #mediainfo {
 	margin-top: 10px;
