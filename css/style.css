@@ -389,6 +389,13 @@ h2 {
 #khung2 .luotnghe {
 	margin-left: -40px;
 }
+.bxh .luotnghe {
+	position: absolute;
+	/* float: right; */
+	/* right: 200px; */
+	width: 100px;
+	/* margin-right: 100px!important; */
+}
 .luotnghe {
 	color: rgb(66, 66, 66);
 	font-size: smaller;
@@ -413,7 +420,8 @@ h2 {
 	display: block;
 } */
 #anext {
-	height: 260px;
+	/* height: 260px; */
+	min-height: 250px;
 	/* display: block; */
 }
 #dangnhap {
@@ -660,7 +668,7 @@ audio {
 
 /* anhalbum */
 #a2 a:hover img {
-	opacity: 0.7;
+	filter: brightness(80%);
 	transition: 0.5s;
 }
 #a2 a img{
@@ -859,4 +867,21 @@ label.error {
 	100% {
 		margin-left: 20px;
 	}
+}
+.imgbxh {
+	width: 718px;
+	height: 209px;
+	background-image: url(../image/vnbxh.jpg);
+	color: white;
+	font-weight: lighter;
+	text-align: center;
+	line-height: 209px;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+.nschung img {
+	border-radius: 50%;
+}
+.nschung .titlehinh {
+	text-align: center;
 }
