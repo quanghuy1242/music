@@ -24,7 +24,7 @@ $(document).ready(function () {
         mnw.document.write("==========================================================================<br>");
         mnw.document.write("Tên đăng nhập: " + $("#tendangnhap").val() + "<br>");
         mnw.document.write("Mật khẩu: " + $("#password").val() + "<br>");
-        window.open("../../index.html","_self");
+        window.open("../index.html","_self");
         // form.submit();
       },
       wrapper : 'span',
@@ -91,7 +91,7 @@ $(document).ready(function () {
         mnw.document.write("Ngày sinh: " + $("#ngay").val() + "/" + $("#chonthang").val() + "/" + $("#nam").val() + "<br>");
         mnw.document.write("Email: " + $("#email").val() + "<br>");
         mnw.document.write("Phái: " + $("input[type=radio]:checked").val() + "<br>");
-        window.open("../../index.html","_self");
+        window.open("..index.html","_self");
       },
       // wrapper : 'span',
       errorPlacement: function (error, element) {
