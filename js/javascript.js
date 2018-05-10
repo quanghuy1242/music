@@ -1,9 +1,4 @@
 var slideIndex = 1;
-// var slides = document.getElementsByClassName("imggg");
-// for (var i = 0; i < slides.length; i++) {
-//   slides[i].style.display = "none";
-// }
-
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -99,10 +94,11 @@ function next() {
   document.getElementById("audioaudio").autoplay = "autoplay";
   document.getElementById("stt").innerHTML = parseInt(stt) + 1;
 }
+
 $(document).ready(function () {
   var defaultOpen = document.getElementsByClassName("defaultOpen");
-			for (var i in defaultOpen) {
-				defaultOpen[i].click();
-      }
+  for (var i in defaultOpen) {
+    defaultOpen[i].click();
+  }
 });
 
